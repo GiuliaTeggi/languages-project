@@ -2,13 +2,12 @@ var explore = document.querySelector("#dropbtn");
 var list = document.querySelector("#list");
 var about = document.querySelector("#about"); 
 var aboutme = document.querySelector("#aboutme");
-var head = document.querySelector("header");
 var close= document.querySelector("#close");
 var main =document.querySelector("#main"); 
 var nav=document.querySelector("nav"); 
 var header = document.querySelector("#wrapper"); 
 var words=document.querySelector(".words");
-var link = document.querySelectorAll(".link"); 
+
 
 
 explore.addEventListener("click", function() {
@@ -27,10 +26,11 @@ explore.addEventListener("click", function() {
    else {list.style.display ="none";}
 }); 
 
-head.addEventListener("click", function(){
-  if (list.style.display === "flex"){
-     list.style.display = "none";
-  }});
+document.addEventListener("click", function(event){
+  var click1 = explore.contains(event.target);
+  if (!click1){
+  list.style.display ="none";}
+});
 
 about.addEventListener("click", function(){
   if (list.style.display === "flex"){
