@@ -1,3 +1,3 @@
 # languages-project
 
-[Link](https://https://giuliateggi.github.io/languages-project/)
+[Link](https://giuliateggi.github.io/languages-project/)
