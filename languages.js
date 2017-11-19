@@ -27,13 +27,6 @@ explore.addEventListener("click", function() {
    else {list.style.display ="none";}
 }); 
 
-document.addEventListener("click", function(event){ 
-   console.log(event.target);
-   if (event.target !== explore){
-    list.style.display="none";
-  }
-})
-
 head.addEventListener("click", function(){
   if (list.style.display === "flex"){
      list.style.display = "none";
