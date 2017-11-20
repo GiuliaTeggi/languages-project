@@ -8,8 +8,6 @@ var nav=document.querySelector("nav");
 var header = document.querySelector("#wrapper"); 
 var words=document.querySelector(".words");
 
-
-
 explore.addEventListener("click", function() {
    if (aboutme.style.display === "flex"){
       aboutme.style.display = "none";
