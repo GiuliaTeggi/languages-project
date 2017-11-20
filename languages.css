@@ -222,3 +222,17 @@ footer a {
   color: #ffffff;
 }
 
+@media screen and (min-width: 500px){
+  nav{
+    justify-content: flex-end; 
+  }
+  
+  nav a {
+    margin-right: 50px;
+  }
+  
+  #aboutText {
+    margin: 160px 30px 30px; 
+  }
+}
+
