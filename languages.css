@@ -74,13 +74,6 @@ nav a {
   background-color: #c7c8c9;
  }
 
-/*
- #dropbtn:hover #list {
-  display: block;
-  padding: 0;
-  background-color: grey; 
-}
-*/
 #aboutme{
   display: none;
   width: 100%;
@@ -223,6 +216,10 @@ footer a {
 }
 
 @media screen and (min-width: 500px){
+  #wrapper{
+    justify-content: flex-end;
+  }
+  
   nav{
     justify-content: flex-end; 
   }
@@ -231,8 +228,12 @@ footer a {
     margin-right: 50px;
   }
   
+  #list {
+    width: 300px; 
+  }
+  
   #aboutText {
-    margin: 160px 30px 30px; 
+    margin: 160px 40px 30px; 
   }
 }
 
