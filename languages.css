@@ -1,3 +1,7 @@
+* {
+  color: #000;
+}
+
 body {
   display: flex; 
   flex-direction: column;
@@ -5,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f0f1;
+  font-family: 
   }
 
 #wrapper {
@@ -44,7 +49,6 @@ nav a {
     margin-top: 70px;
     z-index: 1; 
     position: relative; 
-
           }
 
 #list ul {
@@ -81,23 +85,24 @@ nav a {
   justify-content: center; 
   align-items: center; 
   flex-direction: column;
-  text-align: center; 
-  z-index: 0; 
+  text-align: center;  
     }
 
 #aboutText { 
-   margin: 160px 10px 30px; 
+   margin: 170px 10px 30px; 
    height: 0%;   
    flex: 1; 
    min-width: 0; 
    font-family: "Lucida Sans Unicode", sans-serif;
    font-size: 0.9em;
-   font-color: #000;
 }
 
+#aboutText h1 {
+  font-family: "Katibeh", serif;
+  font-size: 3em;
+}
 #aboutText a {
   text-decoration: none;
-  color: #000;
 }
 
 #aboutText ul {
@@ -140,52 +145,71 @@ header {
   align-items: center; 
   text-align: center;
   height: 100vh;
-  background-image: url("7011.eps"); 
+  background-image: url("https://images.unsplash.com/photo-1503954230032-c850298b9df3?auto=format&fit=crop&w=1950&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
   background-attachment: fixed; 
 }
 
-h1 {
+header h1 {
   font-family: "Katibeh", serif;
-  color: #000;
   font-size: 2.5em;  
+  color: #fff;
     }
 
 section {
   display: flex; 
-  height: 40vh;
-  margin: 20px 5px 0;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
   flex-direction: column; 
   justify-content: center; 
   font-family: "Lucida Sans Unicode", sans-serif;
-  background-color: white;
+  font-size: 0.9em;
   text-align: center;
+  background-color: #fff;
 }
 
-h2 {
-  font-family: "Katibeh", serif;  
-  font-size: 1.5em;
+#intro {
+  margin-top: 0;
+  background-color: #fff;
 }
+
+.img {
+  margin: 0; 
+  padding: 0;
+}
+
+div img {
+  width: 100%; 
+  align-self: center; 
+  margin: 0; 
+}
+
+.container {
+  margin: 0;
+}
+
+container h2 {
+  font-family: "Katibeh", serif;  
+  font-size: 1.1em;
+}
+
+.text {
+    margin: 0 5%;
+  }
 
 .words{
   display: flex; 
-  height: 60px;
-  margin: 0 10px 0;
+  height: 50px;
+  margin: 0;
   background-color: #ffffff; 
   flex-direction: column; 
-  justify-content: center;
-  text-align: center; 
-  border-top: solid #f47b35;
-  border-bottom: solid #f47b35;
-}
-
-.words h3{
-  display: inline-block;
+  text-align: center;
 }
 
 .words a {
   text-decoration: none;
   font-family: "Lucida Sans Unicode", sans-serif;
-  font-size: 0.8em;
+  font-size: 1.5em;
   color: #f47b35;
 }
 
@@ -194,18 +218,22 @@ h2 {
 }
 
 .words-list{
-  margin-top: 0; 
+  display: none;
+  margin: 0; 
 }
+
 footer {
-  width: 100%
+  display: flex;
+  width: 100%;
   min-height: 48px; 
-  margin-top: 40px;
-  background-color: #42a367;  
+  background-color: #42a367; 
+  justify-content: center;
   text-align: center;
  }
 
 footer p {
-  font-size: 1em; 
+  font-family: "Lucida Sans Unicode", sans-serif;
+  font-size: 0.9em; 
 }
 
 footer a {
@@ -213,7 +241,7 @@ footer a {
   color: #ffffff;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 750px){
   #wrapper{
     justify-content: flex-end;
   }
@@ -231,7 +259,65 @@ footer a {
   }
   
   #aboutText {
-    margin: 160px 40px 30px; 
+    margin: 160px 20% 30px; 
+  }
+  
+ header h1{
+    font-size: 4em;
+  }
+  
+  .img {
+    max-width: 400px;  
+    height: 300px; 
+    border: 10px solid #f8f7f9;
+    border-bottom: 30px solid #f8f7f9;
+    margin: 3%;
+    background-color: #f8f7f9;
+    box-shadow: 5px 5px 5px #888888;
+  }
+  
+  .flex-container {
+    padding: 0; 
+    margin: 0;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 50vw;
+    flex-direction: column; 
+    align-self: flex-start;
+  }
+  
+  section {
+    min-height: 40vh;
+  }
+
+  .purple{
+    background-color: #c4a0d8;
+  }
+  .left {
+    order: 1; 
+  }
+  
+  .right{
+    order: 2;
+  }
+  
+ .language {
+    margin-bottom: 0;
+  }
+  
+  .words{
+  display: none; 
+  }
+  
+  .words-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
   }
 }
-
