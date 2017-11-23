@@ -1,7 +1,3 @@
-* {
-  color: #000;
-}
-
 body {
   display: flex; 
   flex-direction: column;
@@ -23,7 +19,7 @@ nav {
   display: flex; 
   flex-direction: row;
   justify-content: space-around;
-  background-color: #42a367;
+  background-color: #685567;
   margin: 0;
   top: 0;
   width: 100%; 
@@ -95,6 +91,7 @@ nav a {
    min-width: 0; 
    font-family: "Lucida Sans Unicode", sans-serif;
    font-size: 0.9em;
+   color: #000;
 }
 
 #aboutText h1 {
@@ -103,6 +100,7 @@ nav a {
 }
 #aboutText a {
   text-decoration: none;
+  color: #000;
 }
 
 #aboutText ul {
@@ -120,7 +118,7 @@ nav a {
 }
 
 #aboutText li i:hover {
-  color: #42a367;
+  color: #685567;
 }
 
 #close{
@@ -128,7 +126,7 @@ nav a {
   position: absolute; 
   top: 20px; 
   right: 5%; 
-  color: #42a367; 
+  color: #685567; 
 }
 
 #aboutme img{
@@ -136,7 +134,7 @@ nav a {
   top: 50px; 
   width: 110px; 
   border-radius: 50%; 
-  border: 3px solid #f2248b;
+  border: 3px solid #685567;
 }
 
 header {
@@ -145,14 +143,16 @@ header {
   align-items: center; 
   text-align: center;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1503954230032-c850298b9df3?auto=format&fit=crop&w=1950&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-image: url("https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
   background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header h1 {
   font-family: "Katibeh", serif;
-  font-size: 2.5em;  
-  color: #fff;
+  font-size: 3em; 
+  color: #685567;
     }
 
 section {
@@ -169,13 +169,14 @@ section {
 }
 
 #intro {
-  margin-top: 0;
   background-color: #fff;
+  height: 40vh;
 }
 
 .img {
   margin: 0; 
   padding: 0;
+  width: 100%;
 }
 
 div img {
@@ -185,12 +186,14 @@ div img {
 }
 
 .container {
+  width: 50wv;
   margin: 0;
 }
 
-container h2 {
+.container h2 {
   font-family: "Katibeh", serif;  
-  font-size: 1.1em;
+  font-size: 2.3em;
+  color: #685567;
 }
 
 .text {
@@ -201,7 +204,7 @@ container h2 {
   display: flex; 
   height: 50px;
   margin: 0;
-  background-color: #ffffff; 
+  background-color: #fff; 
   flex-direction: column; 
   text-align: center;
 }
@@ -215,6 +218,7 @@ container h2 {
 
 .words i {
   font-size: 1.3em;
+  color: #000;
 }
 
 .words-list{
@@ -226,19 +230,20 @@ footer {
   display: flex;
   width: 100%;
   min-height: 48px; 
-  background-color: #42a367; 
+  background-color: #685567; 
   justify-content: center;
   text-align: center;
  }
 
 footer p {
   font-family: "Lucida Sans Unicode", sans-serif;
-  font-size: 0.9em; 
+  font-size: 0.9em;
+  color: #fff;
 }
 
 footer a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 @media screen and (min-width: 750px){
@@ -265,8 +270,9 @@ footer a {
  header h1{
     font-size: 4em;
   }
+ 
   
-  .img {
+.img {
     max-width: 400px;  
     height: 300px; 
     border: 10px solid #f8f7f9;
@@ -279,24 +285,70 @@ footer a {
   .flex-container {
     padding: 0; 
     margin: 0;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    background-color: #fff5f5;
+   background-image: url("low-contrast-linen.png");
   }
   
   .container {
     width: 50vw;
-    flex-direction: column; 
-    align-self: flex-start;
+    flex-direction: column;
+    margin: 3% auto;
   }
   
   section {
     min-height: 40vh;
   }
-
-  .purple{
-    background-color: #c4a0d8;
+  
+  .italy {
+     background-image: url("Italy.jpg");
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .italy img {
+    display: none; 
+  }
+  
+  .italy .img {
+    display: none;
+  }
+  .greece img {
+    display: none;
+  }
+  
+  .greece .img {
+    display: none;
+  }
+  
+  .greece {
+    background-image: url("Greece.jpg");
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .english img {
+    display: none; 
+  }
+  
+  .english .img{
+    display: none;
+  }
+  
+  .english {
+    background-image: url("England.jpg");
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .left {
     order: 1; 
