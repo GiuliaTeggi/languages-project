@@ -276,7 +276,7 @@ footer a {
     height: 300px; 
     border: 10px solid #f8f7f9;
     border-bottom: 30px solid #f8f7f9;
-    margin: 3%;
+    margin: 3% 0;
     background-color: #f8f7f9;
     box-shadow: 5px 5px 5px #888888;
   }
