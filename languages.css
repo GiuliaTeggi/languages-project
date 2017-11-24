@@ -143,10 +143,9 @@ header {
   align-items: center; 
   text-align: center;
   height: 100vh;
-  background-image: url("https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-image: url("low-contrast-linen.png");
   background-attachment: fixed; 
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat; 
 }
 
 header h1 {
