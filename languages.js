@@ -14,25 +14,25 @@ explore.addEventListener("click", function() {
      main.style.display = "block";
      header.style.position = "fixed";
      nav.style.position = "fixed"; 
-     list.style.display = "flex";
+     list.style.display = "290px";
   }
-  else if (list.style.display == "none"){
+  else if (list.style.height = "0"){
     header.style.position = "fixed";
     nav.style.position = "fixed"; 
-    list.style.display = "flex";
+    list.style.height = "290px";
       }
-   else {list.style.display ="none";}
+   else {list.style.height ="0";}
 }); 
 
 document.addEventListener("click", function(event){
   var click1 = explore.contains(event.target);
   if (!click1){
-  list.style.display ="none";}
+  list.style.height ="0";}
 });
 
 about.addEventListener("click", function(){
-  if (list.style.display === "flex"){
-      list.style.display = "none";
+  if (list.style.height !== "0"){
+      list.style.height = "0";
         main.style.display = "none";
         header.style.position ="relative"; 
         nav.style.position ="relative";
