@@ -37,15 +37,17 @@ nav a {
  }
 
 #list {
-    display: none; 
+    height: 0; 
     justify-content: center; 
     width: 100%; 
     background-color: grey;
     padding: 0; 
     margin-top: 70px;
     z-index: 1; 
-    position: relative; 
-          }
+    position: relative;
+    overflow: hidden; 
+    transition: height 0.4s ease;  
+  }     
 
 #list ul {
    list-style-type: none;
@@ -143,7 +145,8 @@ header {
   align-items: center; 
   text-align: center;
   height: 100vh;
-  background-image: url("low-contrast-linen.png");
+  background-color: #fff5f5;
+   background-image: url("low-contrast-linen.png");
   background-attachment: fixed; 
   background-repeat: repeat; 
 }
@@ -154,10 +157,60 @@ header h1 {
   color: #685567;
     }
 
+#intro {
+  background-color: #fff;
+  height: 40vh;
+}
+
+.img {
+  margin: 0; 
+  padding: 0;
+  width: 100%; 
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img img {
+  width: 100%;
+  align-self: center; 
+  margin: 0; 
+  height: 50vh;
+}
+
+#Italian .img {
+    background-image: url("Italy.jpg");
+  }
+
+#French img {
+  display: none; 
+}
+
+#French .img {
+    background-image: url("France.jpg");
+  }
+
+#Latin .img {
+    background-image: url("Greece.jpg");
+  }
+
+#Spanish img {
+  display: none; 
+}
+
+#Spanish .img {
+  background-image: url("Spain.jpg");
+}
+
+ #English .img {
+    background-image: url("England.jpg");
+  }
+
 section {
   display: flex; 
   max-width: 100%;
-  height: auto;
+  min-height: 30vh;
   margin: 0;
   flex-direction: column; 
   justify-content: center; 
@@ -167,29 +220,7 @@ section {
   background-color: #fff;
 }
 
-#intro {
-  background-color: #fff;
-  height: 40vh;
-}
-
-.img {
-  margin: 0; 
-  padding: 0;
-  width: 100%;
-}
-
-div img {
-  width: 100%; 
-  align-self: center; 
-  margin: 0; 
-}
-
-.container {
-  width: 50wv;
-  margin: 0;
-}
-
-.container h2 {
+section h2 {
   font-family: "Katibeh", serif;  
   font-size: 2.3em;
   color: #685567;
@@ -201,7 +232,7 @@ div img {
 
 .words{
   display: flex; 
-  height: 50px;
+  height: 10vh;
   margin: 0;
   background-color: #fff; 
   flex-direction: column; 
@@ -270,16 +301,15 @@ footer a {
     font-size: 4em;
   }
  
-  
 .img {
-    max-width: 400px;  
-    height: 300px;
-    margin: 3% auto;
+    max-width: 30%;
+    height: 20%;
     display: flex;   
     align-items: center;
-  }
+    margin: 3%
+     }
   
- img {
+ .img img {
     max-width: 100%; 
     height: auto;
     border: 10px solid #f8f7f9;
@@ -303,14 +333,14 @@ footer a {
   .container {
     width: 50vw;
     flex-direction: column;
-    margin: 3% auto;
+    margin: 3%;
   }
   
   section {
     min-height: 40vh;
   }
   
-  .italy {
+  #Italian {
      background-image: url("Italy.jpg");
     background-attachment: fixed; 
     background-position: center;
@@ -318,22 +348,23 @@ footer a {
     background-size: cover;
   }
   
-  .italy img {
-    display: none; 
-  }
-  
-  .italy .img {
-    display: none;
-  }
-  .greece img {
+  #Italian .img {
     display: none;
   }
   
-  .greece .img {
+  #French img {
+    display: flex;
+  }
+  
+  #Latin img {
     display: none;
   }
   
-  .greece {
+  #Latin .img {
+    display: none;
+  }
+  
+  #Latin {
     background-image: url("Greece.jpg");
     background-attachment: fixed; 
     background-position: center;
@@ -341,15 +372,19 @@ footer a {
     background-size: cover;
   }
   
-  .english img {
+  #Spanish img {
+  display: flex; 
+}
+  
+  #English img {
     display: none; 
   }
   
-  .english .img{
+  #English .img{
     display: none;
   }
   
-  .english {
+  #English {
     background-image: url("England.jpg");
     background-attachment: fixed; 
     background-position: center;
