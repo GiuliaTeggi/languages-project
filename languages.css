@@ -251,7 +251,7 @@ button {
   border: none; 
 }
 
-i .fa .arrow {
+i.fa.arrow {
   font-size: 2em; 
   color: #1a4d66; 
 }
