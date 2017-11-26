@@ -120,7 +120,12 @@ nav a {
 }
 
 #aboutText li img {
- width: 36px;  
+ width: 36px;
+ transition: 0s; 
+}
+
+#aboutText li img:hover {
+  fill:  #1a4d66; 
 }
 
 #aboutText li i:hover {
