@@ -1,11 +1,11 @@
-var explore = document.querySelector("#dropbtn");
-var list = document.querySelector("#list");
-var about = document.querySelector("#about"); 
-var aboutme = document.querySelector("#aboutme");
+var explore = document.getElementById("dropbtn");
+var list = document.getElementById("list");
+var about = document.getElementById("about"); 
+var aboutme = document.getElementById("aboutme");
 var head = document.querySelector("header");
-var main =document.querySelector("#main"); 
+var main =document.getElementById("main"); 
 var nav=document.querySelector("nav"); 
-var header = document.querySelector("#wrapper"); 
+var header = document.getElementById("wrapper");  
 
 explore.addEventListener("click", function() {
    if (aboutme.style.display === "flex"){
