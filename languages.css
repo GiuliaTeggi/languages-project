@@ -19,7 +19,7 @@ nav {
   display: flex; 
   flex-direction: row;
   justify-content: space-around;
-  background-color:  #1a4d66;
+  background-color: #1a4d66;
   margin: 0;
   top: 0;
   width: 100%; 
@@ -124,11 +124,11 @@ nav a {
 }
 
 #aboutText li i:hover {
-  color: #685567;
+  color: #1a4d66;
 }
 
 #aboutText li img:hover {
-  color: #685567;
+  color: #1a4d66;
 }
 
 #close{
@@ -136,7 +136,7 @@ nav a {
   position: absolute; 
   top: 20px; 
   right: 5%; 
-  color: #685567; 
+  color: #1a4d66; 
 }
 
 #aboutme #portrait {
@@ -144,7 +144,7 @@ nav a {
   top: 50px; 
   width: 110px; 
   border-radius: 50%; 
-  border: 3px solid #685567;
+  border: 3px solid #1a4d66;
 }
 
 header {
