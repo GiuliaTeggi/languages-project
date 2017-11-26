@@ -91,7 +91,7 @@ nav a {
    flex: 1; 
    min-width: 0; 
    font-family: "Lucida Sans Unicode", sans-serif;
-   font-size: 0.9em;
+   font-size: 1em;
    color: #000;
 }
 
@@ -112,10 +112,7 @@ nav a {
   display: inline-block; 
   list-style-type: none; 
   margin: 30px 30px 30px 0; 
-}
-
-#aboutText li {
-  font-size: 2.5em; 
+  font-size: 2.5em;
 }
 
 #aboutText li img {
@@ -159,6 +156,10 @@ header h1 {
 #intro {
   background-color: #fff;
   height: 40vh;
+}
+
+#intro .text {
+  height: 80%;     
 }
 
 .img {
@@ -225,7 +226,7 @@ section h2 {
 
 .text {
     font-family: "Lucida Sans Unicode", sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center;
     margin: 0 5%; 
   }
@@ -436,7 +437,6 @@ footer a {
     display: flex;
     flex-direction: column;
     width: 100%; 
-    max-height: 50vh;
-    overflow: hidden;
+    min-height: 40vh;
   }
 }
