@@ -361,7 +361,7 @@ footer a {
     justify-content: center;
     align-items: center;
     background-color: #fff5f5;
-   background-image: url("https://inspirationhut.net/wp-content/uploads/2014/09/light-paper-fibers.jpg");
+   background-image: url("lightpaperfibers.png");
   }
   
   .container {
@@ -375,7 +375,7 @@ footer a {
   }
   
   #Italian {
-     background-image: url("https://images.unsplash.com/photo-1470776455360-5b7018843b11?auto=format&fit=crop&w=1500&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+     background-image: url("Italy.jpg");
     background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
@@ -399,7 +399,7 @@ footer a {
   }
   
   #Latin {
-    background-image: url("https://cdn.pixabay.com/photo/2017/02/23/15/56/acropolis-2092534_960_720.jpg");
+    background-image: url("Greece.jpg");
     background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
@@ -419,7 +419,7 @@ footer a {
   }
   
   #English {
-    background-image: url("https://images.unsplash.com/photo-1464082354059-27db6ce50048?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    background-image: url("England.jpg");
     background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
@@ -445,7 +445,7 @@ footer a {
     display: flex;
     flex-direction: column;
     width: 100%; 
-    max-height: 40vh;
+    max-height: 50vh;
     overflow: hidden;
   }
 }
