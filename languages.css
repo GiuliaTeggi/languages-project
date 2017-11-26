@@ -119,7 +119,15 @@ nav a {
   font-size: 2.5em; 
 }
 
-#aboutText li:hover {
+#aboutText li img {
+ width: 40px;  
+}
+
+#aboutText li i:hover {
+  color: #685567;
+}
+
+#aboutText li img:hover {
   color: #685567;
 }
 
