@@ -59,9 +59,3 @@ close.addEventListener("click", function(){
   nav.style.position = "fixed"; 
 });
 
-//Slide down and up to open and close extra content 
-document.querySelectorAll("button").addEventListener("click", function(){
-  document.querySelectorAll(".extra").classList.toggle("closed");
-  document.querySelectorAll(".extra").classList.toggle("open");
-}); 
-
