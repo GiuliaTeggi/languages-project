@@ -6,8 +6,7 @@ var close= document.querySelector("#close");
 var main =document.querySelector("#main"); 
 var nav=document.querySelector("nav"); 
 var header = document.querySelector("#wrapper"); 
-var button =document.getElementsByClassName("button");
-var text = document.getElementsByClassName("extra");
+
 
 //Open and close Explore list 
 explore.addEventListener("click", function() {
@@ -61,8 +60,8 @@ close.addEventListener("click", function(){
 });
 
 //Slide down and up to open and close extra content 
-button.addEventListener("click", function(){
-  text.classList.toggle("closed");
-  text.classList.toggle("open");
+document.querySelectorAll("button").addEventListener("click", function(){
+  document.querySelectorAll(".extra").classList.toggle("closed");
+  document.querySelectorAll(".extra").classList.toggle("open");
 }); 
 
