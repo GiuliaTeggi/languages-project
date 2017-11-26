@@ -37,7 +37,7 @@ nav a {
  }
 
 #list {
-    height: 0; 
+    display: none; 
     justify-content: center; 
     width: 100%; 
     background-color: grey;
@@ -45,8 +45,7 @@ nav a {
     margin-top: 70px;
     z-index: 1; 
     position: relative;
-    overflow: hidden; 
-    transition: height 0.4s ease;  
+    overflow: hidden;       
   }     
 
 #list ul {
