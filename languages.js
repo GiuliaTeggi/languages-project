@@ -7,6 +7,7 @@ var main =document.getElementById("main");
 var nav=document.querySelector("nav"); 
 var header = document.getElementById("wrapper");  
 
+//Open and close Explore menu
 explore.addEventListener("click", function() {
    if (aboutme.style.display === "flex"){
       aboutme.style.display = "none";
@@ -22,12 +23,14 @@ explore.addEventListener("click", function() {
       }
    else {list.style.display ="none";}}); 
 
+//Close Explore menu if click anywhere on page outside Explore
 document.addEventListener("click", function(event){
   var click1 = explore.contains(event.target);
   if (!click1){
   list.style.display ="none";}
 });
 
+//Open and close About section
 about.addEventListener("click", function(){
   if (list.style.display === "flex"){
       list.style.display = "none";
@@ -47,22 +50,21 @@ about.addEventListener("click", function(){
         }
 }); 
 
+//Close About section clicking on X icon
 var close= document.querySelector("#close");
-
 close.addEventListener("click", function(){
   aboutme.style.display ="none";
   main.style.display = "block";
   nav.style.position = "fixed"; 
 });
 
+//Slide down and up div with class "extra" by clicking on button 
 var button = document.getElementsByClassName("button");
-var text = document.getElementsByClassName("extra");
-
-for (var i=0; i < button.length; i++) {
-  button[i].addEventListener('click', function(){
-    for(var x = 0; x < text.length; x++){
-      text[x].classList.toggle("closed");
-      text[x].classList.toggle("open");
-    }});
+for(var i=0; i < button.length; i++){
+  button[i].addEventListener("click", function (){
+    var text = event.target.parentElement.querySelector(".extra");
+   text.classList.toggle("closed");
+   text.classList.toggle("open");
+  })
 }
 
