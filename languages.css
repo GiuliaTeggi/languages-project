@@ -145,6 +145,7 @@ header {
    background-image: url("13.jpg");
   background-attachment: fixed; 
   background-size: cover; 
+  background-position: center; 
 }
 
 header h1 {
