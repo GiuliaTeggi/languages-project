@@ -151,7 +151,7 @@ header {
 header h1 {
   font-family: "Katibeh", serif;
   font-size: 3em; 
-  color:  #1a4d66;
+  color:  #fff;
     }
 
 #intro {
@@ -325,7 +325,7 @@ footer a {
   }
   
  header h1{
-    font-size: 4em;
+    font-size: 3.5em;
   }
  
 .img {
