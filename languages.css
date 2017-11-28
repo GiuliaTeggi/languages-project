@@ -212,7 +212,7 @@ header h1 {
 section {
   display: flex; 
   max-width: 100%;
-  min-height: 30vh;
+  min-height: 40vh;
   margin: 0;
   flex-direction: column; 
   justify-content: center;
