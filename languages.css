@@ -327,6 +327,10 @@ footer a {
  header h1{
     font-size: 3.5em;
   }
+  
+ #intro .text {
+    margin: 2% 20%;
+  }
  
 .img {
     max-width: 30%;
