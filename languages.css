@@ -248,6 +248,7 @@ button {
 i.fa.arrow {
   font-size: 2em; 
   color: #1a4d66; 
+  pointer-events: none;
 }
 
 .extra {
@@ -363,13 +364,13 @@ footer a {
   }
   
   .container {
-    width: 50vw;
+    width: 60vw;
     flex-direction: column;
     margin: 3%;
   }
   
   section {
-    min-height: 40vh;
+    min-height: 90vh;
   }
   
   #Italian {
@@ -442,7 +443,6 @@ footer a {
  .extra {
     display: flex;
     flex-direction: column;
-    width: 100%; 
-    min-height: 40vh;
+    width: 100%;
   }
 }
