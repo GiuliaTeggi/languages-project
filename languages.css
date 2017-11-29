@@ -370,8 +370,13 @@ footer a {
     margin: 3%;
   }
   
-  section {
-    min-height: 90vh;
+  .language .text {
+    min-height: 28vh;
+  }
+    
+  .extra {
+    display: flex;
+    flex-direction: column;
   }
   
   #Italian {
@@ -439,11 +444,5 @@ footer a {
   
   button {
   display: none; 
-  }
-  
- .extra {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
   }
 }
