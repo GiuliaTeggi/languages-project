@@ -47,6 +47,8 @@ about.addEventListener("click", function(){
       }
    else {aboutme.style.display ="none";
         main.style.display = "block";
+        header.style.position = "fixed";
+        nav.style.position = "fixed"; 
         }
 }); 
 
