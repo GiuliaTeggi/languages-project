@@ -140,12 +140,13 @@ header {
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background-color: #fff5f5;
-   background-image: url("13.jpg");
+  background-image: url("13.jpg");
   background-attachment: fixed; 
   background-size: cover; 
-  background-position: center; 
+  background-position: center center; 
 }
 
 header h1 {
