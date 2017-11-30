@@ -281,11 +281,22 @@ footer {
   width: 100%;
   min-height: 48px; 
   background-color: #1a4d66; 
-  -webkit-box-pack: center; 
-      -ms-flex-pack: center; 
-          justify-content: center;
-  text-align: center;
+  -webkit-box-pack: distribute; 
+      -ms-flex-pack: distribute; 
+          justify-content: space-around;
+   -ms-flex-line-pack: center;
+  align-items: center;
  }
+
+footer a {
+  font-size: 2em;
+  color: #fff;
+  margin: 1% 2%;
+}
+
+footer img {
+  width: 36px;
+}
 
 @media screen and (min-width: 750px){
   #wrapper{
@@ -444,6 +455,13 @@ footer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  
+  footer {
+   -webkit-box-pack: center;
+     -ms-flex-pack: center;
+  justify-content: center;
+    
   }
  
 }
