@@ -386,6 +386,10 @@ footer img {
             flex-direction: column;
   }
   
+  .container.left{
+    width: 40vw;
+  }
+  
   .language .text {
     margin: 10%;
   }
