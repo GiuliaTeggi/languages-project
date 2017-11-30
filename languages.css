@@ -298,6 +298,13 @@ footer a {
   color: #fff;
 }
 
+@media screen and (max-width: 640px){
+ 
+  header {
+    background-attachment: scroll;
+  }
+}
+
 @media screen and (min-width: 750px){
   #wrapper{
     -webkit-box-pack: end;
@@ -465,4 +472,12 @@ footer a {
     margin: 160px 30% 30px; 
   }
  
+}
+
+@media screen and (min-width: 1800px){
+
+  #main {
+    margin: 0 10%; 
+  }
+  
 }
